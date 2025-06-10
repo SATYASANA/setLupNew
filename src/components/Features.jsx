@@ -1,10 +1,11 @@
-import "../styles/Features.css";
+import "./Features.css";
 import SupportIcon from "../assets/Support.png";
 import networkIcon from "../assets/network.png";
 import logisticsIcon from "../assets/logistics.png";
 import servicesIcon from "../assets/services.png";
 import RobustIcon from "../assets/Robust.png";
 import financeIcon from "../assets/finance.png";
+<style></style>
 const Features = () => {
   return (
     <div className="features-container">
