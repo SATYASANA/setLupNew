@@ -102,7 +102,7 @@ import ScaleBrands from "./components/ScaleBrands";
 import { Routes, Route } from "react-router-dom";
 // import TermsAndConditions from "./components/TermsAndConditions"; 
 import RefundPolicy from "./components/RefundPolicy";
-import Privacy from "./components/Privacy";
+
 
 import AnimationHero from "./AnimationHero";
 const App = () => {
@@ -128,7 +128,7 @@ const App = () => {
           <Footer />
         </div>
       } />
-      <Route path="/privacy" element={<Privacy />} /> {/* :white_check_mark: Route added */}
+      
        <Route path="/RefundPolicy" element={<RefundPolicy />} />
     </Routes>
   );
