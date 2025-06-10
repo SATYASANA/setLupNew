@@ -1,0 +1,181 @@
+.For-container {
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  /* padding: 10px; */
+  box-sizing: border-box;
+}
+
+.retailer-inner {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+
+  gap: 1.5em;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 6rem;
+
+}
+
+.retailer-name h2 {
+  /* display: flex
+; */
+  /* text-align: center; */
+  margin-left: 20%;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.retailer-name img {
+  width: 200px;
+}
+
+.retailer-inner img {
+  width: 280px;
+}
+
+.For-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.retailer-hero img {
+  width: 100%;
+}
+
+.Retailer-container {
+  background-image: url(/images/blue-frame-1.png);
+  /* padding: 31rem 0; */
+  padding-top: 3rem;
+  background-size: cover;
+  /* object-fit: cover; */
+  background-position: top;
+  /* object-position: top; */
+  position: relative;
+  margin-top: 40px;
+  padding-bottom: 90px;
+}
+
+.retailer-boy img {
+  position: absolute;
+  width: 466px;
+  right: 20px;
+  top: -113px;
+}
+
+
+.our-reach {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.our-reach h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.reach-counter {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter-inner {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.counter-inner h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.counter-inner p {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 0;
+  color: #696969;
+  text-transform: uppercase;
+}
+
+/* For tablets and smaller desktops */
+@media screen and (max-width: 1024px) {
+  .For-container {
+    padding: 15px;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+  .retailer-name img {
+    width: 87px;
+  }
+
+  .retailer-boy img {
+    position: absolute;
+    width: 118px;
+    right: 0px;
+    top: 60px;
+  }
+
+  .retailer-name h2 {
+    /* display: flex
+; */
+    /* text-align: center; */
+    margin-left: 13%;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 65px;
+  }
+
+  .retailer-inner {
+
+    margin-top: 3rem
+  }
+
+  .Retailer-container {
+    padding-bottom: 5px;
+  }
+
+  .reach-counter {
+    flex-direction: column;
+  }
+
+  .For-container {
+    padding: 10px;
+  }
+  .counter-inner img{
+    width: 100px;
+  }
+  .our-reach h3 {
+    font-size: 2rem
+
+;
+    text-align: center;
+}
+.counter-inner p {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 0;
+    color: #696969;
+}
+}
+
+/* For smaller mobile devices */
+@media screen and (max-width: 480px) {
+  .For-container {
+    padding: 5px;
+  }
+}

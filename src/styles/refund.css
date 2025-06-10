@@ -1,0 +1,27 @@
+.refund-container {
+   margin: 0 auto;
+  padding: 5%;
+  margin-top: -5%;
+}
+
+.refund-body {
+    background: #f8f9fa;
+  padding: 5%;
+}
+
+.refund-title {
+  font-size: 2.5rem;
+  color: #343a40;
+}
+
+.refund-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.refund-section p,
+.refund-section ul {
+  color: #495057;
+  line-height: 1.6;
+}

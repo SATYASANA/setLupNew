@@ -1,0 +1,42 @@
+.setup-brands {
+    background: linear-gradient(180deg, #007bff 0%, #0056b3 100%);
+    color: #ffffff;
+    padding: 60px 20px;
+  }
+  
+  .setup-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .setup-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .setup-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .setup-text p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .setup-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .setup-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

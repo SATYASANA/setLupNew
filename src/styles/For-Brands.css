@@ -1,0 +1,421 @@
+.brands-container {
+  position: relative;
+  width: 100%;
+  height: 144vh;
+  overflow: hidden;
+  margin-top: 90px;
+}
+
+.brands-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 60px;
+  box-sizing: border-box;
+  top: 31%;
+  transform: translateY(-50%);
+}
+
+.cards-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .card {
+  position: absolute;
+  width: 600px;
+  height: 350px;
+  transition: all 1s ease;
+  opacity: 0;
+  transform: translateX(100%) scale(1);
+} */
+
+.card {
+  position: absolute;
+  width: 600px;
+  height: 350px;
+  transition: all 10s ease-in;
+  opacity: 0;
+  transform: translateX(100%); /* starts offscreen to the right */
+}
+
+/* When you want the card to appear */
+.card.active {
+  opacity: 1;
+  transform: translateX(0); /* slides into place */
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* border-radius: 10px; */
+  margin-top: 20%;
+
+}
+
+.card.active {
+  opacity: 2.7;
+  transform: translateX(0) scale(1);
+  z-index: 2;
+}
+
+.card.prev {
+  opacity: 2.7;
+  transform: translateX(-105%) scale(1);
+  z-index: 2;
+}
+
+.card.next {
+  opacity: 2.7;
+  transform: translateX(105%) scale(1);
+  z-index: 1;
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+/* .nav-button-next {
+  outline: none;
+    border: none;
+} */
+
+.nav-brands img {
+  width: 40%;
+  height: 50%;
+  object-fit: contain;
+  margin-bottom: -120%;
+}
+
+
+@media (min-width: 1400px) {
+
+  .card {
+    position: absolute;
+    width: 695px;
+    height: 350px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateX(100%) scale(0.8);
+  }
+
+  .nav-brands {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    padding: 2px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-button-prev {
+    background: none;
+    margin-left: 350%;
+    margin-top: 330%;
+  }
+
+  .nav-button-next {
+    margin-left: -501%;
+    margin-top: 330%;
+  }
+
+  .nav-button img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .card {
+    position: absolute;
+    width: 695px;
+    height: 350px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateX(100%) scale(0.8);
+  }
+
+  .nav-brands {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    padding: 2px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-button-prev {
+    margin-left: 350%;
+    margin-top: 335%;
+  }
+
+  .nav-button-next {
+    margin-left: -501%;
+    margin-top: 335%;
+  }
+
+  .nav-button img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+  }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card {
+    position: absolute;
+    width: 490px;
+    height: 300px;
+    margin-top: -30%;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateX(100%) scale(0.8);
+  }
+
+  .nav-brands {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    padding: 2px;
+    margin-top: -15%;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-button-prev {
+    margin-left: 305%;
+    margin-top: 200%;
+  }
+
+  .nav-button-next {
+    margin-left: -445%;
+    margin-top: 200%;
+  }
+
+  .nav-button img {
+    width: 35px;
+    height: 42px;
+    object-fit: contain;
+  }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card {
+    position: absolute;
+    width: 320px;
+    height: 150px;
+    margin-top: 30%;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateX(100%) scale(0.8);
+  }
+
+  .nav-brands {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    padding: 2px;
+    margin-top: -20%;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-button-prev {
+    margin-left: 249%;
+    margin-top: 410%;
+  }
+
+  .nav-button-next {
+    margin-left: -355%;
+    margin-top: 410%;
+  }
+
+  .nav-button img {
+    width: 45px;
+    height: 42px;
+    object-fit: contain;
+  }
+
+  .brands-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+
+  .brands-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .card {
+    position: absolute;
+    width: 200px;
+    height: 95px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateX(100%) scale(0.8);
+    margin-top: 30%;
+  }
+
+  .nav-brands {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    padding: 2px;
+    margin-top: -50px;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-button-prev {
+    margin-left: 200%;
+    margin-top: 400%;
+  }
+
+  .nav-button-next {
+    margin-left: -220%;
+    margin-top: 400%;
+  }
+
+  .nav-button img {
+    width: 30px;
+    height: 42px;
+    object-fit: contain;
+  }
+
+  .brands-container {
+            position: relative;
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        margin-top: -19px;
+  }
+
+  .brands-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    position: absolute;
+    width: 215px;
+    height: 95px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: translateX(100%) scale(0.8);
+    margin-top: 50%;
+    margin-left: 2%;
+  }
+
+  .nav-brands {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    padding: 2px;
+    margin-top: -10px;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-button-prev {
+    margin-left: 200%;
+    margin-top: 490%;
+  }
+
+  .nav-button-next {
+    margin-left: -230%;
+    margin-top: 490%;
+  }
+
+  .nav-button img {
+    width: 25px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  .brands-container {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    margin-top: -90px;
+  }
+
+  .brands-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

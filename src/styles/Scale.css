@@ -1,0 +1,53 @@
+.setup-container {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .setup-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+  
+  /* For tablets and smaller desktops */
+  @media screen and (max-width: 1024px) {
+    .setup-container {
+        padding: 15px;
+        margin-top: -50px;
+    }
+  } 
+  
+  /* For mobile devices */
+  @media screen and (max-width: 768px) {
+    .setup-container {
+        padding: 10px;
+        margin-top: -30px;
+    }
+  }
+  
+  /* For smaller mobile devices */
+  @media screen and (max-width: 480px) {
+    .setup-container {
+        padding: 5px;
+        margin-top: -20px;
+    }
+  }
+  @media (max-width: 575.98px) {
+    /* .setup-container {
+      width: 100%;
+      max-width: 1540px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    } */
+    
+    .scale {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      margin-top: -140px;
+    }
+  }

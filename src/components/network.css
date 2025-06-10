@@ -1,0 +1,24 @@
+.network-hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, #38bdf8, #0ea5e9);
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #f8fafc, transparent);
+  border-top-left-radius: 100% 30%;
+  border-top-right-radius: 100% 30%;
+  opacity: 0.5;
+}

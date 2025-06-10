@@ -1,0 +1,125 @@
+
+  
+
+  .branding {
+    padding: 90px 0px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: -6%;
+  }
+  
+  .branding h2 {
+    font-size: 47px;
+    font-family: poppins;
+    color: #098BFF;
+    margin-top: 30px;
+  }
+  
+  .logo-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .logo-track {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    gap: 40px;
+    width: fit-content;
+  }
+  .logo-box {
+    width: 80px;
+    height: 25px;
+    /* background: white; */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+    padding: 10px;
+    flex-shrink: 0;
+  }
+  
+  .logo-box img {
+    max-width: 200%;
+    max-height: 500%;
+    object-fit: cover;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-50% - 20px));
+    }
+  }
+  
+ 
+
+  
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .branding h2 {
+    font-size: 47px;
+    font-family: poppins;
+    color: #098BFF;
+    margin-top: -50px;
+  }  
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .branding h2 {
+    font-size: 45px;
+    font-family: poppins;
+    color: #098BFF;
+    margin-top: -60px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .branding h2 {
+    font-size: 45px;
+    font-family: poppins;
+    color: #098BFF;
+    margin-top: -50px;
+  }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .branding h2 {
+    font-size: 47px;
+    font-family: poppins;
+    color: #098BFF;
+    margin-top: -20px;
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .branding h2 {
+    font-size: 35px;
+    font-family: poppins;
+    color: #098BFF;
+    margin-top: -50px;
+  }
+
+   .logo-box img {
+    max-width: 100%;
+    max-height: 300%;
+    object-fit: contain;
+  }
+  
+}
+
+@media (min-width: 320px) {
+  .branding h2 {
+    font-size: 25px;
+    font-family: poppins;
+    color: #098BFF;
+    margin-top: -50px;
+  }
+}

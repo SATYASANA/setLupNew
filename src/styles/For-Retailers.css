@@ -1,0 +1,35 @@
+.Retailer-container {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    /* padding: 10px; */
+    box-sizing: border-box;
+  }
+  
+  .Retailer-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+  
+  /* Retailer tablets and smaller desktops */
+  @media screen and (max-width: 1024px) {
+    .Retailer-container {
+      padding: 15px;
+    }
+  } 
+  
+  /* Retailer mobile devices */
+  @media screen and (max-width: 768px) {
+    .Retailer-container {
+      padding: 10px;
+    }
+  }
+  
+  /* Retailer smaller mobile devices */
+  @media screen and (max-width: 480px) {
+    .Retailer-container {
+      padding: 5px;
+    }
+  }
