@@ -13,7 +13,7 @@ const Counter = ({ image, target, suffix, label, trigger }) => {
   useEffect(() => {
     if (!trigger) return;
 
-    setCount(0); // Reset before starting
+    setCount(0); // Reset count before starting
     let current = 0;
     const duration = 2000;
     const step = Math.ceil(target / (duration / 30));
@@ -34,7 +34,7 @@ const Counter = ({ image, target, suffix, label, trigger }) => {
   return (
     <div className='counter-inner'>
       <div>
-        <img src={image} alt={label} />
+        <img src={image} alt="" />
       </div>
       <div>
         <h4>{count}{suffix}</h4>
@@ -51,12 +51,13 @@ const ForRetailer = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log("Observer entry:", entry); // For debugging
-        if (entry.isIntersecting && !visible) {
-          setVisible(true);
+        if (entry.isIntersecting) {
+          
+          setVisible(false);
+          setTimeout(() => setVisible(true), 50);
         }
       },
-      { threshold: 0.2 } // More lenient for mobile
+      { threshold: 0.5 }
     );
 
     if (counterRef.current) {
@@ -66,22 +67,22 @@ const ForRetailer = () => {
     return () => {
       if (counterRef.current) observer.unobserve(counterRef.current);
     };
-  }, [visible]);
+  }, []);
 
   return (
     <div>
       <div className="Retailer-container">
         <div className='retailer-name'>
-          <h2><span><img src="/images/SetLUp.png" alt="Setup" /></span> for retailer</h2>
+          <h2><span><img src="/images/SetLUp.png" alt="" /></span> for retailer</h2>
         </div>
 
         <div className='retailer-boy'>
-          <img src="/images/create-chat.png" alt="Retailer Illustration" />
+          <img src="/images/create-chat.png" alt="" />
         </div>
 
         <div className='retailer-inner'>
           {[...Array(5)].map((_, i) => (
-            <div key={i}><img src="/images/highrOI.png" alt={`Feature ${i + 1}`} /></div>
+            <div key={i}><img src="/images/highrOI.png" alt="" /></div>
           ))}
         </div>
       </div>
