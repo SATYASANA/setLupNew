@@ -19,13 +19,13 @@ const generateNodes = () =>
 const leftTexts = [
   "Get Real-Time Visibility into your Supply Chain – From Factory to Retail",
   "Expand your Brand reach nation wide through an Established Network",
-  "Improve Distribution Efficiency – Drive Higher Profits"
+  "A Full Stack Distributuon  Market Place for Brand & Distributors "
 ];
 
 const rightTexts = [
-  "SetLUp – India’s Fastest Distribution Network",
   "Building India's Fastest Distribution Network",
-  "Build Smarter Supply Chains with SetLUp"
+  "Building India's Fastest Distribution Network",
+  "Building India's Fastest Distribution Network"
 ];
 
 const images = ["/images/data-analysis.png", "/images/expand-your.png", "/images/indianMap.png"];
