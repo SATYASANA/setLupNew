@@ -1,5 +1,5 @@
 import "./Features.css";
-import SupportIcon from "../assets/Support.png";
+import SupportIcon from "../assets/support.png";
 import networkIcon from "../assets/network.png";
 import logisticsIcon from "../assets/logistics.png";
 import servicesIcon from "../assets/services.png";
