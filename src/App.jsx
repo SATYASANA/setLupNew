@@ -108,7 +108,7 @@ import AnimationHero from "./AnimationHero";
 const App = () => {
   return (
     <Routes>
-      <Route path="/staging" element={
+      <Route path="/" element={
         <div>
           {/* Your original App layout */}
           <Navbar />
