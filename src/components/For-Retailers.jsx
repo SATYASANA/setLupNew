@@ -7,6 +7,14 @@ const countersData = [
   { image: "/images/counter-3.png", target: 5000, suffix: "+", label: "RETAIL COUNTERS" },
 ];
 
+const highRoiImages = [
+  "/images/highROI-1.png",
+  "/images/highROI-2.png",
+  "/images/Optimized-Inventory.png",
+  "/images/highROI-4.png",
+  "/images/Dedicated-Support-Card.png",
+];
+
 const Counter = ({ image, target, suffix, label, trigger }) => {
   const [count, setCount] = useState(0);
 
@@ -52,7 +60,6 @@ const ForRetailer = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          
           setVisible(false);
           setTimeout(() => setVisible(true), 50);
         }
@@ -81,8 +88,8 @@ const ForRetailer = () => {
         </div>
 
         <div className='retailer-inner'>
-          {[...Array(5)].map((_, i) => (
-            <div key={i}><img src="/images/highrOI.png" alt="" /></div>
+          {highRoiImages.map((src, i) => (
+            <div key={i}><img src={src} alt={`ROI ${i + 1}`} /></div>
           ))}
         </div>
       </div>
