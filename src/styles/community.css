@@ -5,14 +5,15 @@
   }
   
   .community h2 {
-    font-size: 50px;
+    font-size: 51.2px;
     /* font-family: poppins; */
     color: #098BFF;
     margin-bottom: 10px;
+    font-weight: 700;
   }
   
   .community p {
-    font-size: 28px;
+    font-size: 31.29px;
     color: #000000;
     margin-top: -10px;
     font-weight: 500;

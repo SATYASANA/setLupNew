@@ -9,9 +9,9 @@ const countersData = [
 
 const highRoiImages = [
   "/images/highrOI.png",
-  "/images/timely.png",
+  "/images/Timely Fulfilment.png",
   "/images/Optimized-Inventory.png",
-  "/images/reward&achievements.png",
+  "/images/Rewards.png",
   "/images/Dedicated-Support-Card.png",
 ];
 
@@ -80,7 +80,7 @@ const ForRetailer = () => {
     <div>
       <div className="Retailer-container">
         <div className='retailer-name'>
-          <h2><span><img src="/images/SetLUp.png" alt="" /></span> for retailer</h2>
+          <h2><span><img src="/images/SetLUp.png" alt="" /></span> <span>for Retailers</span></h2>
         </div>
 
         <div className='retailer-boy'>

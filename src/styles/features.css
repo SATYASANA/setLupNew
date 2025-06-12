@@ -187,6 +187,55 @@ body{
   margin-top: 10px; /* adjust if needed */
 }
   
+
+
+
+
+.Scale-Brands{
+  background-image: url(/images/Readyto-ScaleBg.png);
+padding: 4rem 0;
+}
+
+
+.scale-inner{
+  padding: 0 4rem;
+}
+.scale-left h2{
+  font-size: 55px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 0;
+}
+.scale-left{
+  width: 55%;
+}
+.scale-right{
+  width: 35%;
+}
+.scale-left p{
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffff;
+  margin-top: 1rem;
+}
+.scale-left a{
+  width: 205px;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+}
+.scale-inner{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 4rem;
+}
+.scale-right img{
+  width: 100%;
+}
 /* Responsive */
 /* Large desktop (1200px and up) */
 @media (min-width: 1200px) {
@@ -298,6 +347,40 @@ body{
   
 }
 @media (max-width: 768px) {
+  .scale-inner {
+    display: flex
+;
+padding: 0 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.scale-left h2 {
+    font-size: 25px;}
+.scale-left {
+    width:100%;
+}
+.scale-left p {
+    font-size: 16px;
+}
+.scale-right {
+  width: 100%;
+}
+.scale-left a {
+    width: 146px;
+    padding: 10px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+}
+.scale-right img {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
   .feature-card-wrapper{
   display: grid;
   grid-template-columns: repeat(1,1fr);
