@@ -8,10 +8,10 @@ const countersData = [
 ];
 
 const highRoiImages = [
-  "/images/highROI-1.png",
-  "/images/highROI-2.png",
+  "/images/highrOI.png",
+  "/images/highrOI.png",
   "/images/Optimized-Inventory.png",
-  "/images/highROI-4.png",
+  "/images/highrOI.png",
   "/images/Dedicated-Support-Card.png",
 ];
 
