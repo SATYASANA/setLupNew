@@ -17,9 +17,10 @@ const generateNodes = () =>
   }));
 
 const leftTexts = [
+  "A Full Stack Distributuon  Market Place for Brand & Distributors ",
   "Get Real-Time Visibility into your Supply Chain – From Factory to Retail",
-  "Expand your Brand reach nation wide through an Established Network",
-  "A Full Stack Distributuon  Market Place for Brand & Distributors "
+  "Expand your Brand reach nation wide through an Established Network"
+  
 ];
 
 const rightTexts = [
@@ -28,7 +29,7 @@ const rightTexts = [
   "Building India's Fastest Distribution Network"
 ];
 
-const images = ["/images/data-analysis.png", "/images/expand-your.png", "/images/indianMap.png"];
+const images = ["/images/indianMap.png","/images/data-analysis.png", "/images/expand-your.png", ];
 
 export default function AnimationHero() {
   const canvasRef = useRef(null);
