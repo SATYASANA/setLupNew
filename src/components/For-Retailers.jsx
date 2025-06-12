@@ -9,9 +9,9 @@ const countersData = [
 
 const highRoiImages = [
   "/images/highrOI.png",
-  "/images/highrOI.png",
+  "/images/timely.png",
   "/images/Optimized-Inventory.png",
-  "/images/highrOI.png",
+  "/images/reward&achievements.png",
   "/images/Dedicated-Support-Card.png",
 ];
 
