@@ -168,6 +168,8 @@
 
   .reach-counter {
     flex-direction: column;
+    gap: 4.2rem;
+    margin-top: 1rem;
   }
 
   .For-container {
